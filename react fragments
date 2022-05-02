@@ -10,3 +10,17 @@
           <input type='text' onChange={(e) => this.commitInputChanges(e, 'some color')} />
         </form>
       </Fragment>
+      
+ also i can use this syntax:
+ 
+  <> ---- i can us it like this
+        <button onClick={this.nextYear}>+++</button>
+        <h1>My name is {name} , surname - {surname}, age-{years}, position - {pos}</h1>
+        <a href={link}> {piska}</a>
+        <form>
+          <span>Введите должность</span>
+          <input type='text' onChange={(e) => this.commitInputChanges(e, 'some color')} />
+        </form>
+      </>
+ 
+ 
