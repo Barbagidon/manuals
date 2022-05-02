@@ -1,0 +1,12 @@
+ import { Component, Fragment } from 'react' - with imported components i can stop use empty divs
+ 
+ 
+ <Fragment> ---- i can us it like this
+        <button onClick={this.nextYear}>+++</button>
+        <h1>My name is {name} , surname - {surname}, age-{years}, position - {pos}</h1>
+        <a href={link}> {piska}</a>
+        <form>
+          <span>Введите должность</span>
+          <input type='text' onChange={(e) => this.commitInputChanges(e, 'some color')} />
+        </form>
+      </Fragment>
