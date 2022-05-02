@@ -1,0 +1,25 @@
+  onToggleProp = (id, prop) => {    -  метод
+
+        this.setState(({ data }) => ({
+            data: data.map(item => {
+                if (item.id === id) {
+                    return { ...item, [prop]: !item[prop] }
+                } else {
+                    return item;
+                }
+
+            })
+
+        }))
+
+    }
+    
+    Выставляем дата атрибут с нужным значением для необходимых элементов и получаем их при вызове метода/функции:
+     <button type="button"
+                    className="btn-cookie btn-sm"
+                    onClick={onToggleProp}
+                    data-toggle='increase'>   ---- нужны дата атрибут
+                    <i className="fas fa-cookie"></i>
+                </button>
+
+ onToggleProp = {(e)=> onToggleProp(id, e.currentTarget.getAttribute('data-toggle'))} - его получение
